@@ -1,0 +1,11 @@
+{
+  "name": "rfp-triage",
+  "description": "Triage RFP and tender documentation for sources of complexity.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Anton Hrytsenko"
+  },
+  "homepage": "https://github.com/hrytsenko/claude-rfp-triage",
+  "repository": "https://github.com/hrytsenko/claude-rfp-triage",
+  "license": "MIT"
+}

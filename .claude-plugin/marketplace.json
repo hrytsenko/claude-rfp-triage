@@ -1,0 +1,14 @@
+{
+  "name": "claude-rfp-triage",
+  "description": "Plugin for RFP triage.",
+  "owner": {
+    "name": "Anton Hrytsenko"
+  },
+  "plugins": [
+    {
+      "name": "rfp-triage",
+      "description": "Triage RFP and tender documentation for sources of complexity.",
+      "source": "./"
+    }
+  ]
+}
