@@ -54,9 +54,9 @@ When in doubt between High and Critical, state the uncertainty in the finding.
 The overall risk is a verdict on how the drivers found combine, not the highest level among them: several drivers together may be harder than each one alone.
 The verdict is based on the documentation only, not on the supplier's capacity.
 
-- **Manageable** — No drivers, or only High drivers that are bounded and largely independent. A regular bid process can absorb them.
-- **Concerning** — Several High drivers that aggravate each other (e.g. on-premises hosting with strict availability targets and many legacy integrations), or a single Critical driver that a clarification question may resolve. The bid needs attention to them.
-- **Dangerous** — Critical drivers that clarification is unlikely to resolve, such as dependencies outside the supplier's control, or undocumented systems. Due diligence is needed before committing to bid.
-- **Prohibitive** — Critical drivers that conflict with each other or with other constraints in the documentation, or so many of them that delivery as specified looks infeasible.
+- **Predictable** — No drivers, or only High drivers that are bounded and largely independent. A regular bid process can absorb them.
+- **Challenging** — Several High drivers that aggravate each other (e.g. on-premises hosting with strict availability targets and many legacy integrations), or a single Critical driver that a clarification question may resolve. The bid needs attention to them.
+- **Uncertain** — Critical drivers that clarification is unlikely to resolve, such as dependencies outside the supplier's control, or undocumented systems. Due diligence is needed before committing to bid.
+- **Unrealistic** — Critical drivers that conflict with each other or with other constraints in the documentation, or so many of them that delivery as specified looks infeasible.
 
 When in doubt between two verdicts, choose the more severe one and state the uncertainty in the Executive Summary.

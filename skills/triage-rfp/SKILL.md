@@ -63,13 +63,13 @@ Then assess all drivers found together:
 
 Produce the report in the following format.
 
-- **Executive Summary** states the overall risk verdict, as defined in the list of drivers, followed by a short paragraph in plain language.
-  The paragraph explains how the drivers found combine to justify the verdict.
+- **Executive Summary** states the overall risk verdict, as defined in the list of drivers, followed by the scale of all verdicts with this one in bold, and a short paragraph in plain language.
+  The scale shows readers how severe the verdict is. The paragraph explains how the drivers found combine to justify the verdict.
 - **Complexity Drivers** lists only the drivers found, ordered by risk level (Critical, High), then by their number in the list.
   Do not mention drivers that are absent.
   Each driver opens with a short summary of why it has this risk level, followed by its findings.
   Keep each finding to one bullet point. Gaps and contradictions are findings too.
-- If no drivers are found, the overall risk is Manageable: state "No significant complexity drivers found." in the Executive Summary and omit the Complexity Drivers section.
+- If no drivers are found, the overall risk is Predictable: state "No significant complexity drivers found." in the Executive Summary and omit the Complexity Drivers section.
 - Quote short fragments of the documents verbatim, in their original language.
 
 ```
@@ -78,6 +78,8 @@ Produce the report in the following format.
 ## Executive Summary
 
 **Overall risk:** <verdict>
+
+Predictable · Challenging · Uncertain · Unrealistic
 
 <how the drivers found combine to justify the verdict>
 

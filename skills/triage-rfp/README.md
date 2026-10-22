@@ -12,7 +12,7 @@ Primary formats: PDF, DOCX, XLSX, and PPTX. The agent may convert documents to t
 
 ## Output
 
-- **Executive Summary** — the overall risk verdict (Manageable, Concerning, Dangerous, or Prohibitive) and how the drivers found combine to justify it.
+- **Executive Summary** — the overall risk verdict (Predictable, Challenging, Uncertain, or Unrealistic) shown on the scale of all verdicts, and how the drivers found combine to justify it.
 - **Complexity Drivers** — each driver found with its risk level (High or Critical), exact findings with document locations, and the complexity they add. Drivers absent from the documentation are not listed.
 - **Sources** — the documents analyzed.
 
