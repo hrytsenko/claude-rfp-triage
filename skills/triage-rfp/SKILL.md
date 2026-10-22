@@ -67,6 +67,7 @@ Produce the report in the following format.
   The paragraph explains how the drivers found combine to justify the verdict.
 - **Complexity Drivers** lists only the drivers found, ordered by risk level (Critical, High), then by their number in the list.
   Do not mention drivers that are absent.
+  Each driver opens with a short summary of why it has this risk level, followed by its findings.
   Keep each finding to one bullet point. Gaps and contradictions are findings too.
 - If no drivers are found, the overall risk is Manageable: state "No significant complexity drivers found." in the Executive Summary and omit the Complexity Drivers section.
 - Quote short fragments of the documents verbatim, in their original language.
@@ -84,9 +85,9 @@ Produce the report in the following format.
 
 ### <name> — <level>
 
-- <finding with specific values> (<document>, <location>) — <why it adds complexity>
+<why this level>
 
-**Risk:** <level> — <why this level>
+- <finding with specific values> (<document>, <location>) — <why it adds complexity>
 
 ## Sources
 
