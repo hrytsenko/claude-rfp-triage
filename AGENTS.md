@@ -18,7 +18,7 @@ The `triage-rfp` skill deliberately does not name tools for reading PDF, DOCX, X
 This follows from relying on strong models: choosing and running suitable tooling is left to the agent that executes the skill, based on what is available in its environment.
 The skill only states the requirement: documents may be converted to text, keeping section headings, page numbers, table structure, and requirement IDs so that findings can be located.
 
-Do not add specific tools, commands, or installation steps to the skill or its README.
+Do not add specific tools, commands, or installation steps to the skill or the README.
 
 ## Versioning
 
