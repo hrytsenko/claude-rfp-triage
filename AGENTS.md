@@ -19,3 +19,9 @@ This follows from relying on strong models: choosing and running suitable toolin
 The skill only states the requirement: documents may be converted to text, keeping section headings, page numbers, table structure, and requirement IDs so that findings can be located.
 
 Do not add specific tools, commands, or installation steps to the skill or its README.
+
+## Versioning
+
+When you change the skill itself, such as its `SKILL.md` or references, bump the minor version in `.claude-plugin/plugin.json`, for example from `0.2.0` to `0.3.0`, so that clients update it.
+Bump it once per set of uncommitted changes: if the version already differs from the last commit, leave it as is.
+Do not bump the version for changes that do not reach clients, such as READMEs or GitHub workflows.
