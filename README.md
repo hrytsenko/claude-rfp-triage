@@ -42,6 +42,7 @@ Full definitions are in [COMPLEXITY_DRIVERS.md](skills/triage-rfp/references/COM
 
 ## Triage report
 
+- **Procurement** — the issuer, the title and reference of the procurement, and what is being procured, so the report identifies what was triaged.
 - **Executive Summary** — the overall risk verdict shown on the scale of all verdicts, and how the drivers found combine to justify it.
 - **Complexity Drivers** — each driver found with its risk level, exact findings with document locations, and the complexity they add. Drivers absent from the documentation are not listed.
 - **Sources** — the documents analyzed.
