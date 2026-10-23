@@ -32,6 +32,7 @@ Run it after the triage, in the same session, to find what to clarify with the c
 ```
 
 Run it after the triage, in the same session, to save the report as a PDF to share.
+If you found levers, they are included.
 Optionally, pass a language to translate the report.
 
 ## Before you run
@@ -61,7 +62,7 @@ Full definitions are in [COMPLEXITY_DRIVERS.md](skills/triage-rfp/references/COM
 - **Complexity Drivers** — each driver found with its risk level, exact findings with document locations, and the complexity they add. Drivers absent from the documentation are not listed.
 - **Sources** — the documents analyzed, each with its role in the procurement.
 
-## Clarification levers
+## Complexity levers
 
 - **Constraint** — the scope, obligation, or dependency to bound, pin down, or shift to the customer.
 - **Findings** — the findings of the triage report that the lever acts on.
@@ -72,8 +73,8 @@ Full definitions are in [COMPLEXITY_DRIVERS.md](skills/triage-rfp/references/COM
 ## PDF report
 
 - **First page** — the procurement, the executive summary, and a table of the drivers found with their risk levels.
-- **Following pages** — the complexity drivers, each with its summary set apart in a block.
+- **Following pages** — the complexity drivers, each with its summary set apart in a block, then the complexity levers, if any.
 - **Last page** — the sources.
 
-The content is that of the triage report, unchanged except for translation: quotes from the documents stay in their original language.
+The content is that of the triage report and the levers, unchanged except for translation: quotes from the documents stay in their original language.
 Risk levels and verdicts share one color scale by severity, and are always shown with their names.

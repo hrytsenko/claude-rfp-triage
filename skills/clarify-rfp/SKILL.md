@@ -1,11 +1,11 @@
 ---
 name: clarify-rfp
-description: Find the levers that could reduce the risk identified by triage-rfp, each with what to constrain, the clarification question to ask the customer, and the assumption that favors the bid. Use after triage-rfp when asked what to clarify with the customer or how to reduce the risk of an RFP or tender.
+description: Find the complexity levers that could reduce the risk identified by triage-rfp, each with what to constrain, the clarification question to ask the customer, and the assumption that favors the bid. Use after triage-rfp when asked what to clarify with the customer or how to reduce the risk of an RFP or tender.
 ---
 
 ## Instructions
 
-You are finding levers that could reduce the risk identified in the triage report produced by the `triage-rfp` skill.
+You are finding complexity levers that could reduce the risk identified in the triage report produced by the `triage-rfp` skill.
 A lever is something the bidder wants to constrain, such as a scope, an obligation, or a dependency, by asking the customer a clarification question.
 If the question goes unanswered, the bid can state the answer it seeks as an assumption.
 Follow each step below in order. Work through the steps silently: do not narrate your process.
@@ -44,7 +44,7 @@ Quote short fragments of the documents verbatim, in their original language.
 If no lever is worth the customer's attention, state "No levers found." under the title.
 
 ```
-# RFP Clarification Levers
+# RFP Complexity Levers
 
 ## <number>. <constraint>
 
