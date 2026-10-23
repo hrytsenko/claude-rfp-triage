@@ -70,6 +70,7 @@ Produce the report in the following format.
   Do not mention drivers that are absent.
   Each driver opens with a short summary of why it has this risk level, followed by its findings.
   Keep each finding to one bullet point. Gaps and contradictions are findings too.
+- **Sources** lists every document analyzed, each with one sentence on its role in the procurement, so that readers can tell the documents apart.
 - If no drivers are found, the overall risk is Predictable: state "No significant complexity drivers found." in the Executive Summary and omit the Complexity Drivers section.
 - Quote short fragments of the documents verbatim, in their original language.
 
@@ -98,5 +99,5 @@ Predictable · Challenging · Uncertain · Unrealistic
 
 ## Sources
 
-- <document name>
+- <document name> — <its role in the procurement>
 ```
