@@ -20,6 +20,13 @@ Every finding cites its location in the documents, so it can be checked against 
 
 Pass one or more documents, or directories that contain them.
 
+```
+/rfp-triage:export-pdf <language>
+```
+
+Run it after the triage, in the same session, to save the report as a PDF to share.
+Pass a language to translate the report; without one, the PDF keeps the language of the report.
+
 ## Before you run
 
 - **Model.** Use a high-tier model at high reasoning effort or above.
@@ -47,6 +54,15 @@ Full definitions are in [COMPLEXITY_DRIVERS.md](skills/triage-rfp/references/COM
 - **Complexity Drivers** — each driver found with its risk level, exact findings with document locations, and the complexity they add. Drivers absent from the documentation are not listed.
 - **Sources** — the documents analyzed.
 
+## PDF report
+
+- **First page** — the procurement, the executive summary, and a table of the drivers found with their risk levels.
+- **Following pages** — the complexity drivers, each with its summary set apart in a block.
+- **Last page** — the sources.
+
+The content is that of the triage report, unchanged except for translation: quotes from the documents stay in their original language.
+Risk levels and verdicts share one color scale by severity, and are always shown with their names.
+
 ## Triage follow-ups
 
 Ask in the same session as the triage, while the agent still has the documents and the report.
@@ -57,10 +73,4 @@ Ask in the same session as the triage, while the agent still has the documents a
   For the triage above, list the open points in the documents that could change the risk: ambiguities, gaps, and contradictions.
   For each, give its location, the clarification question to ask, and how the possible answers would add or remove a driver, change its risk level, or change the overall verdict.
   Include only points grounded in the documents. If there are none, say so.
-  ```
-
-- **PDF copy.** To share the report outside the session, ask:
-
-  ```
-  Save the triage report above as a PDF without changing its content.
   ```
