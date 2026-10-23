@@ -1,9 +1,10 @@
 # claude-rfp-triage
 
-A Claude Code plugin and skill to triage RFP and tender documentation for sources of complexity.
+A Claude Code plugin to triage RFP and tender documentation for sources of complexity.
 
-The skill reads RFP or tender documentation, looks for known drivers of solution complexity, and reports the drivers found with their risk levels and an overall risk verdict.
+The triage reads RFP or tender documentation, looks for known drivers of solution complexity, and reports the drivers found with their risk levels and an overall risk verdict.
 Every finding cites its location in the documents, so it can be checked against the source.
+After the triage, you can find the levers that could reduce the risk, with the questions to ask the customer, and export the report as a PDF to share.
 
 ## Install
 
@@ -21,11 +22,17 @@ Every finding cites its location in the documents, so it can be checked against 
 Pass one or more documents, or directories that contain them.
 
 ```
+/rfp-triage:clarify-rfp
+```
+
+Run it after the triage, in the same session, to find what to clarify with the customer to reduce the risk.
+
+```
 /rfp-triage:export-pdf <language>
 ```
 
 Run it after the triage, in the same session, to save the report as a PDF to share.
-Pass a language to translate the report; without one, the PDF keeps the language of the report.
+Optionally, pass a language to translate the report.
 
 ## Before you run
 
@@ -49,10 +56,18 @@ Full definitions are in [COMPLEXITY_DRIVERS.md](skills/triage-rfp/references/COM
 
 ## Triage report
 
-- **Procurement** — the issuer, the title and reference of the procurement, and what is being procured, so the report identifies what was triaged.
+- **Procurement** — the customer, the title and reference of the procurement, and what is being procured, so the report identifies what was triaged.
 - **Executive Summary** — the overall risk verdict shown on the scale of all verdicts, and how the drivers found combine to justify it.
 - **Complexity Drivers** — each driver found with its risk level, exact findings with document locations, and the complexity they add. Drivers absent from the documentation are not listed.
 - **Sources** — the documents analyzed, each with its role in the procurement.
+
+## Clarification levers
+
+- **Constraint** — the scope, obligation, or dependency to bound, pin down, or shift to the customer.
+- **Findings** — the findings of the triage report that the lever acts on.
+- **Question** — the clarification question to ask the customer.
+- **Assumption** — the answer that favors the bid, stated so that the bid can adopt it if the question goes unanswered.
+- **Impact** — what the assumption would relieve if it holds, and how likely the customer is to confirm it.
 
 ## PDF report
 
@@ -62,15 +77,3 @@ Full definitions are in [COMPLEXITY_DRIVERS.md](skills/triage-rfp/references/COM
 
 The content is that of the triage report, unchanged except for translation: quotes from the documents stay in their original language.
 Risk levels and verdicts share one color scale by severity, and are always shown with their names.
-
-## Triage follow-ups
-
-Ask in the same session as the triage, while the agent still has the documents and the report.
-
-- **What could change the risk.** To find open points that could change the risk, with a clarification question for each, ask:
-
-  ```
-  For the triage above, list the open points in the documents that could change the risk: ambiguities, gaps, and contradictions.
-  For each, give its location, the clarification question to ask, and how the possible answers would add or remove a driver, change its risk level, or change the overall verdict.
-  Include only points grounded in the documents. If there are none, say so.
-  ```

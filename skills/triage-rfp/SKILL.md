@@ -63,7 +63,7 @@ Then assess all drivers found together:
 
 Produce the report in the following format.
 
-- **Procurement** identifies what was triaged, so that the report can be read on its own: the issuer, the title and reference of the procurement, and what is being procured, as stated in the documents.
+- **Procurement** identifies what was triaged, so that the report can be read on its own: the customer, the title and reference of the procurement, and what is being procured, as stated in the documents.
 - **Executive Summary** states the overall risk verdict, as defined in the list of drivers, followed by the scale of all verdicts with this one in bold, and a short paragraph in plain language.
   The scale shows readers how severe the verdict is. The paragraph explains how the drivers found combine to justify the verdict.
 - **Complexity Drivers** lists only the drivers found, ordered by risk level (Critical, High), then by their number in the list.
@@ -79,7 +79,7 @@ Produce the report in the following format.
 
 ## Procurement
 
-<issuer, title and reference, and what is being procured>
+<customer, title and reference, and what is being procured>
 
 ## Executive Summary
 
