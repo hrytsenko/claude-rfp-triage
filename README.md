@@ -65,15 +65,16 @@ Full definitions are in [COMPLEXITY_DRIVERS.md](skills/triage-rfp/references/COM
 ## Complexity levers
 
 - **Constraint** — the scope, obligation, or dependency to bound, pin down, or shift to the customer.
-- **Findings** — the findings of the triage report that the lever acts on.
 - **Question** — the clarification question to ask the customer.
 - **Assumption** — the answer that favors the bid, stated so that the bid can adopt it if the question goes unanswered.
-- **Impact** — what the assumption would relieve if it holds, and how likely the customer is to confirm it.
+- **Impact** — what the assumption would relieve if it holds.
+- **Likelihood** — how likely the customer is to confirm the assumption.
+- **Findings** — the findings of the triage report that the lever acts on.
 
 ## PDF report
 
 - **First page** — the procurement, the executive summary, and a table of the drivers found with their risk levels.
-- **Following pages** — the complexity drivers, each with its summary set apart in a block, then the complexity levers, if any.
+- **Following pages** — the complexity drivers, each with its summary set apart in a block, then the complexity levers, if any, each with its question and assumption set apart in a block.
 - **Last page** — the sources.
 
 The content is that of the triage report and the levers, unchanged except for translation: quotes from the documents stay in their original language.

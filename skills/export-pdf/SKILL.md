@@ -32,7 +32,7 @@ The PDF is formal and concise. Add no text of your own beyond page numbers and t
 
 - **First page** holds the title, the Procurement and Executive Summary sections with the verdict scale, and a table of the drivers found with their risk levels, in the order of the report. It must fit on one page.
 - **Complexity Drivers** start on the second page. Set each driver's summary of why it has its level apart in a highlighted block, so that drivers are easy to recognize.
-- **Complexity Levers**, if any, start on a new page after the drivers.
+- **Complexity Levers**, if any, start on a new page after the drivers. Set each lever's question and assumption apart in a highlighted block, so that what to ask and what to assume are easy to find.
 - **Sources** start on a new page at the end.
 
 Risk levels and verdicts share one color scale by severity, and each has the same color wherever it appears:

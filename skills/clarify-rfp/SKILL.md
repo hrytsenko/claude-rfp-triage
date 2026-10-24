@@ -48,13 +48,15 @@ If no lever is worth the customer's attention, state "No levers found." under th
 
 ## <number>. <constraint>
 
-**Findings:**
-
-- <driver>: <finding> (<document>, <location>)
-
 **Question:** <clarification question>
 
 **Assumption:** <the answer that favors the bid, stated as an assumption>
 
-**Impact:** <what the assumption would relieve if it holds, and how likely the customer is to confirm it>
+**Impact:** <what the assumption would relieve if it holds>
+
+**Likelihood:** <how likely the customer is to confirm it>
+
+**Findings:**
+
+- <driver>: <finding> (<document>, <location>)
 ```
