@@ -4,7 +4,7 @@ A Claude Code plugin to triage RFP and tender documentation for sources of compl
 
 The triage reads RFP or tender documentation, looks for known drivers of solution complexity, and reports the drivers found with their risk levels and an overall risk verdict.
 Every finding cites its location in the documents, so it can be checked against the source.
-After the triage, you can find the levers that could reduce the risk, with the questions to ask the customer, and export the report as a PDF to share.
+After the triage, you can find the levers that could reduce the risk, with the questions to ask the customer, and export the report as a PDF or DOCX document to share.
 
 ## Install
 
@@ -28,12 +28,12 @@ Pass one or more documents, or directories that contain them.
 Run it after the triage, in the same session, to find what to clarify with the customer to reduce the risk.
 
 ```
-/rfp-triage:export-pdf <language>
+/rfp-triage:export-report <language-or-format>...
 ```
 
-Run it after the triage, in the same session, to save the report as a PDF to share.
+Run it after the triage, in the same session, to save the report as a document to share.
 If you found levers, they are included.
-Optionally, pass a language to translate the report.
+Optionally, pass a format, PDF (default) or DOCX, and a language to translate the report.
 
 ## Before you run
 
@@ -71,7 +71,7 @@ Full definitions are in [COMPLEXITY_DRIVERS.md](skills/triage-rfp/references/COM
 - **Likelihood** — how likely the customer is to confirm the assumption.
 - **Findings** — the findings of the triage report that the lever acts on.
 
-## PDF report
+## Exported report
 
 - **First page** — the procurement, the executive summary, and a table of the drivers found with their risk levels.
 - **Following pages** — the complexity drivers, each with its summary set apart in a block, then the complexity levers, if any, each with its question and assumption set apart in a block.

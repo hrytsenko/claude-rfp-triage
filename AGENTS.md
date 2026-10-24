@@ -8,7 +8,7 @@ Guidance for agents working on this repository.
 
 The skills are meant to be executed by strong models with high reasoning effort, and they rely on their judgment.
 The `triage-rfp` skill states the goal, the drivers, the risk levels, and the report format, and leaves the reasoning to the agent: how to apply a driver's definition, which edge cases to handle, and how to read and organize the documents.
-The `export-pdf` skill states the page layout, the color scale, and the limits on changing the report, and leaves the typography and page composition to the agent.
+The `export-report` skill states the page layout, the color scale, and the limits on changing the report, and leaves the typography and page composition to the agent.
 
 Do not add rules, thresholds, checklists, or examples that steer the agent where a strong model can decide on its own.
 Explicit rules override the agent's judgment even when it would reason better, so add one only when it states an intent that cannot be inferred, such as a calibration choice or a scope boundary.
@@ -17,7 +17,7 @@ Explicit rules override the agent's judgment even when it would reason better, s
 
 The skills deliberately do not name tools for reading or producing PDF, DOCX, XLSX, PPTX, or other formats.
 This follows from relying on strong models: choosing and running suitable tooling is left to the agent that executes the skill, based on what is available in its environment.
-The skills only state the requirements: `triage-rfp` allows converting documents to text, keeping section headings, page numbers, table structure, and requirement IDs so that findings can be located; `export-pdf` states the layout and asks the agent to check the result.
+The skills only state the requirements: `triage-rfp` allows converting documents to text, keeping section headings, page numbers, table structure, and requirement IDs so that findings can be located; `export-report` states the layout and asks the agent to check the result.
 
 Do not add specific tools, commands, or installation steps to the skills or the README.
 

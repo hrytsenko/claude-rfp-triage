@@ -1,14 +1,14 @@
 ---
-name: export-pdf
-description: Export the triage report produced by triage-rfp, with the levers produced by clarify-rfp if any, as a formal PDF, optionally translated into another language. Use after triage-rfp when asked to save, export, or share the triage report as a PDF.
-argument-hint: <language>
+name: export-report
+description: Export the triage report produced by triage-rfp, with the levers produced by clarify-rfp if any, as a formal PDF or DOCX document, optionally translated into another language. Use after triage-rfp when asked to save, export, or share the triage report as a PDF or Word document.
+argument-hint: <language-or-format>...
 ---
 
 ## Instructions
 
-You are exporting the triage report produced by the `triage-rfp` skill as a formal PDF for readers outside this session.
+You are exporting the triage report produced by the `triage-rfp` skill as a formal document for readers outside this session.
 Follow each step below in order. Work through the steps silently: do not narrate your process.
-Your only output should be the path to the PDF, or the specified error message if a step instructs you to stop.
+Your only output should be the path to the document, or the specified error message if a step instructs you to stop.
 
 ### Step 1 — Find the report
 
@@ -17,7 +17,11 @@ If the conversation also has complexity levers produced by `clarify-rfp` for thi
 Export nothing else from the conversation, such as follow-ups.
 The content of the report is final: do not add, remove, or reword anything, except as Step 2 and Step 3 allow.
 
-### Step 2 — Choose the language
+### Step 2 — Choose the format and language
+
+`$ARGUMENTS` may name a format, a language, or both.
+
+The format is PDF or DOCX. If `$ARGUMENTS` names no format, use PDF. If it names another format, tell the user "Supported formats are PDF and DOCX." and stop.
 
 If `$ARGUMENTS` names a language, translate the report into it. Otherwise, keep the language of the report.
 Translation is the only change allowed to the content:
@@ -26,9 +30,9 @@ Translation is the only change allowed to the content:
 - Keep document names, locations, and requirement IDs as they are.
 - Translate headings, labels, driver names, risk levels, and verdicts, using the same term for each throughout.
 
-### Step 3 — Lay out the PDF
+### Step 3 — Lay out the document
 
-The PDF is formal and concise. Add no text of your own beyond page numbers and the export date.
+The document is formal and concise. Add no text of your own beyond page numbers and the export date.
 
 - **First page** holds the title, the Procurement and Executive Summary sections with the verdict scale, and a table of the drivers found with their risk levels, in the order of the report. It must fit on one page.
 - **Complexity Drivers** start on the second page. Set each driver's summary of why it has its level apart in a highlighted block, so that drivers are easy to recognize.
@@ -42,10 +46,12 @@ Risk levels and verdicts share one color scale by severity, and each has the sam
 - Uncertain — orange
 - Unrealistic, Critical — red
 
-Use muted shades that suit a formal document, and always show the name with the color, so that the PDF reads correctly in grayscale.
+Use muted shades that suit a formal document, and always show the name with the color, so that the document reads correctly in grayscale.
 
-### Step 4 — Produce the PDF
+A DOCX is laid out by the application that opens it, and its readers may edit it: build its layout so that it holds in common word processors and survives editing.
 
-Produce the PDF with suitable tooling.
+### Step 4 — Produce the document
+
+Produce the document with suitable tooling.
 Save it in the working directory, named after the procurement reference and the language of the report.
-Before handing it over, check that it renders as laid out in Step 3 and that every character renders correctly in its language. If not, fix it and produce the PDF again.
+Before handing it over, check that it renders as laid out in Step 3 and that every character renders correctly in its language. If not, fix it and produce the document again.
