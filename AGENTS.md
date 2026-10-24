@@ -8,6 +8,7 @@ Guidance for agents working on this repository.
 
 The skills are meant to be executed by strong models with high reasoning effort, and they rely on their judgment.
 The `triage-rfp` skill states the goal, the drivers, the risk levels, and the report format, and leaves the reasoning to the agent: how to apply a driver's definition, which edge cases to handle, and how to read and organize the documents.
+The `clarify-rfp` skill states what a lever is, how to rank levers, and the output format, and leaves the reasoning to the agent: which levers to choose, how to phrase the questions and assumptions, and how to judge their impact and likelihood.
 The `export-report` skill states the page layout, the color scale, and the limits on changing the report, and leaves the typography and page composition to the agent.
 
 Do not add rules, thresholds, checklists, or examples that steer the agent where a strong model can decide on its own.

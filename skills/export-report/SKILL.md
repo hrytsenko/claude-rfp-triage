@@ -6,7 +6,7 @@ argument-hint: <language-or-format>...
 
 ## Instructions
 
-You are exporting the triage report produced by the `triage-rfp` skill as a formal document for readers outside this session.
+You are exporting the triage report produced by the `triage-rfp` skill, with the complexity levers produced by `clarify-rfp` if any, as a formal document for readers outside this conversation.
 Follow each step below in order. Work through the steps silently: do not narrate your process.
 Your only output should be the path to the document, or the specified error message if a step instructs you to stop.
 

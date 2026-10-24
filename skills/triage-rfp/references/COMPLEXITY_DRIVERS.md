@@ -3,7 +3,7 @@
 Known sources of solution complexity to look for in RFP and tender documentation.
 
 Each driver describes an aspect of the solution and explains what makes it troublesome.
-A driver is present only when the documentation requires its troublesome side.
+A driver is found only when the documentation requires its troublesome side.
 The same aspect in a simple form is not a driver: a standalone application on managed cloud services, or baseline security practices such as the OWASP Top 10, add no unusual complexity.
 
 ## Drivers
@@ -44,19 +44,19 @@ Identify dependencies on existing data sources and requirements to migrate, cons
 
 Only the troublesome side of an aspect is a driver, so every driver found is a source of complexity and the lowest level is **High**. There are no Low or Medium levels.
 
-- **High** — The driver is present and adds effort and uncertainty, but does not jeopardize delivery. State any aggravating factors in the findings: broad or open-ended scope, several instances at once (e.g. many integrations, many client platforms), strict measurable targets, or a need for specialized expertise.
-- **Critical** — The driver may jeopardize delivery or the bid itself: requirements that are mandatory and contractually enforced (penalties, certification before go-live), dependencies that are undocumented, unavailable, or outside the supplier's control, or requirements that conflict with each other or with other constraints in the documentation.
+- **High** — The driver adds effort and uncertainty, but does not jeopardize delivery. State any aggravating factors in the findings: broad or open-ended scope, several instances at once (e.g. many integrations, many client platforms), strict measurable targets, or a need for specialized expertise.
+- **Critical** — The driver may jeopardize delivery or the bid itself: requirements that are mandatory and contractually enforced (penalties, certification before go-live), dependencies that are undocumented, unavailable, or outside the bidder's control, or requirements that conflict with each other or with other constraints in the documentation.
 
 When in doubt between High and Critical, state the uncertainty in the finding.
 
 ## Overall Risk
 
 The overall risk is a verdict on how the drivers found combine, not the highest level among them: several drivers together may be harder than each one alone.
-The verdict is based on the documentation only, not on the supplier's capacity.
+The verdict is based on the documentation only, not on the bidder's capacity.
 
 - **Predictable** — No drivers, or only High drivers that are bounded and largely independent. A regular bid process can absorb them.
 - **Challenging** — Several High drivers that aggravate each other (e.g. on-premises hosting with strict availability targets and many legacy integrations), or a single Critical driver that a clarification question may resolve. The bid needs attention to them.
-- **Uncertain** — Critical drivers that clarification is unlikely to resolve, such as dependencies outside the supplier's control, or undocumented systems. Due diligence is needed before committing to bid.
+- **Uncertain** — Critical drivers that clarification is unlikely to resolve, such as dependencies outside the bidder's control, or undocumented systems. Due diligence is needed before committing to bid.
 - **Unrealistic** — Critical drivers that conflict with each other or with other constraints in the documentation, or so many of them that delivery as specified looks infeasible.
 
 When in doubt between two verdicts, choose the more severe one and state the uncertainty in the Executive Summary.

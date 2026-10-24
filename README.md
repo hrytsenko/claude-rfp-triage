@@ -25,20 +25,20 @@ Pass one or more documents, or directories that contain them.
 /rfp-triage:clarify-rfp
 ```
 
-Run it after the triage, in the same session, to find what to clarify with the customer to reduce the risk.
+Run it after the triage, in the same conversation, to find what to clarify with the customer to reduce the risk.
 
 ```
 /rfp-triage:export-report <language-or-format>...
 ```
 
-Run it after the triage, in the same session, to save the report as a document to share.
+Run it after the triage, in the same conversation, to save the report as a document to share.
 If you found levers, they are included.
 Optionally, pass a format, PDF (default) or DOCX, and a language to translate the report.
 
 ## Before you run
 
 - **Model.** Use a high-tier model at high reasoning effort or above.
-  The skill states goals and definitions and leaves the judgment to the model, so the quality of the triage depends on it.
+  The skills state goals and definitions and leave the judgment to the model, so the quality of the results depends on it.
 - **Input.** Provide a curated set: every document that defines the scope, including annexes, addenda, and clarifications, and nothing else.
   Primary formats are PDF, DOCX, XLSX, and PPTX.
   The agent treats every document as relevant and reads each one in full, so unrelated files skew the findings and add time and cost, while missing ones make the triage misleading.
@@ -47,10 +47,10 @@ Optionally, pass a format, PDF (default) or DOCX, and a language to translate th
 
 ## Complexity drivers
 
-- **Complexity Driver.** A known source of solution complexity, such as on-premises hosting, legacy integrations, strict availability targets, or mandatory security frameworks.
-  It counts only in its troublesome form: hosting on managed cloud services, for example, is not a driver.
-- **Risk Level.** Only High or Critical, since every driver found adds complexity: High adds effort and uncertainty, Critical may jeopardize delivery or the bid itself.
-- **Overall Risk.** A verdict on how the drivers combine, not the highest level among them.
+- **Complexity Driver** — a known source of solution complexity, such as on-premises hosting, legacy integrations, strict availability targets, or mandatory security frameworks.
+  Only its troublesome side counts: hosting on managed cloud services, for example, is not a driver.
+- **Risk Level** — only High or Critical, since every driver found adds complexity: High adds effort and uncertainty, Critical may jeopardize delivery or the bid itself.
+- **Overall Risk** — a verdict on how the drivers combine, not the highest level among them.
   From least to most severe: Predictable (a regular bid process absorbs them), Challenging (needs attention in the bid), Uncertain (needs due diligence before bidding), Unrealistic (infeasible as specified).
 
 Full definitions are in [COMPLEXITY_DRIVERS.md](skills/triage-rfp/references/COMPLEXITY_DRIVERS.md).
