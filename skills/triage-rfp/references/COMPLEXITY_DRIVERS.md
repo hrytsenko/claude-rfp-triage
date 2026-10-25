@@ -10,7 +10,7 @@ The same aspect in a simple form is not a driver: a standalone application on ma
 
 ### 1. System Class
 
-Determine whether the requested solution is an extensible platform or a product rather than a standalone application. Platforms and products introduce higher architectural complexity because they must support future extensions, maintain backward compatibility, and minimize the impact of changes on existing applications and consumers. These expectations increase solution complexity and associated risks.
+Identify whether the requested solution is an extensible platform or a product rather than a standalone application. Platforms and products introduce higher architectural complexity because they must support future extensions, maintain backward compatibility, and minimize the impact of changes on existing applications and consumers. These expectations increase solution complexity and associated risks.
 
 ### 2. Target Environment
 
@@ -44,8 +44,8 @@ Identify dependencies on existing data sources and requirements to migrate, cons
 
 Only the troublesome side of an aspect is a driver, so every driver found is a source of complexity and the lowest level is **High**. There are no Low or Medium levels.
 
-- **High** — The driver adds effort and uncertainty, but does not jeopardize delivery. State any aggravating factors in the findings: broad or open-ended scope, several instances at once (e.g. many integrations, many client platforms), strict measurable targets, or a need for specialized expertise.
-- **Critical** — The driver may jeopardize delivery or the bid itself: requirements that are mandatory and contractually enforced (penalties, certification before go-live), dependencies that are undocumented, unavailable, or outside the bidder's control, or requirements that conflict with each other or with other constraints in the documentation.
+- **High** — The driver adds effort and uncertainty, but does not jeopardize delivery. State any aggravating factors in the findings: broad or open-ended scope, several instances at once (such as many integrations or many client platforms), strict measurable targets, or a need for specialized expertise.
+- **Critical** — The driver may jeopardize delivery or the bid itself: requirements that are mandatory and contractually enforced (such as penalties or certification before go-live), dependencies that are undocumented, unavailable, or outside the bidder's control, or requirements that conflict with each other or with other constraints in the documentation.
 
 When in doubt between High and Critical, state the uncertainty in the finding.
 
@@ -55,7 +55,7 @@ The overall risk is a verdict on how the drivers found combine, not the highest 
 The verdict is based on the documentation only, not on the bidder's capacity.
 
 - **Predictable** — No drivers, or only High drivers that are bounded and largely independent. A regular bid process can absorb them.
-- **Challenging** — Several High drivers that aggravate each other (e.g. on-premises hosting with strict availability targets and many legacy integrations), or a single Critical driver that a clarification question may resolve. The bid needs attention to them.
+- **Challenging** — Several High drivers that aggravate each other (such as on-premises hosting with strict availability targets and many legacy integrations), or a single Critical driver that a clarification question may resolve. The bid needs attention to them.
 - **Uncertain** — Critical drivers that clarification is unlikely to resolve, such as dependencies outside the bidder's control, or undocumented systems. Due diligence is needed before committing to bid.
 - **Unrealistic** — Critical drivers that conflict with each other or with other constraints in the documentation, or so many of them that delivery as specified looks infeasible.
 

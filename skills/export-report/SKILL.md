@@ -19,12 +19,12 @@ The content of the report is final: do not add, remove, or reword anything, exce
 
 ### Step 2 — Choose the format and language
 
-`$ARGUMENTS` may name a format, a language, or both.
+`$ARGUMENTS` or the user's request may name a format, a language, or both.
 
-The format is PDF or DOCX. If `$ARGUMENTS` names no format, use PDF. If it names another format, tell the user "Supported formats are PDF and DOCX." and stop.
+The format is PDF or DOCX. If no format is named, use PDF. If another format is named, tell the user "Supported formats are PDF and DOCX." and stop.
 
-If `$ARGUMENTS` names a language, translate the report into it. Otherwise, keep the language of the report.
-Translation is the only change allowed to the content:
+If a language is named, translate the report into it. Otherwise, keep the language of the report.
+Translation changes only the language, not the content:
 
 - Keep quotes from the documents verbatim, in their original language: they are the evidence.
 - Keep document names, locations, and requirement IDs as they are.
@@ -34,9 +34,9 @@ Translation is the only change allowed to the content:
 
 The document is formal and concise. Add no text of your own beyond page numbers and the export date.
 
-- **First page** holds the title, the Procurement and Executive Summary sections with the verdict scale, and a table of the drivers found with their risk levels, in the order of the report. It must fit on one page.
-- **Complexity Drivers** start on the second page. Set each driver's summary of why it has its level apart in a highlighted block, so that drivers are easy to recognize.
-- **Complexity Levers**, if any, start on a new page after the drivers. Set each lever's question and assumption apart in a highlighted block, so that what to ask and what to assume are easy to find.
+- **First page** holds the title, the Procurement and Executive Summary sections with the verdict scale, and, if the triage found drivers, a table of them with their risk levels, in the order of the report. It must fit on one page.
+- **Complexity Drivers**, if any, start on the second page. Set each driver's summary of why it has its level apart in a highlighted block, so that drivers are easy to recognize.
+- **Complexity Levers**, if `clarify-rfp` found any, start on a new page after the drivers. Set each lever's question and assumption apart in a highlighted block, so that what to ask and what to assume are easy to find.
 - **Sources** start on a new page at the end.
 
 Risk levels and verdicts share one color scale by severity, and each has the same color wherever it appears:
@@ -53,5 +53,5 @@ A DOCX is laid out by the application that opens it, and its readers may edit it
 ### Step 4 — Produce the document
 
 Produce the document with suitable tooling.
-Save it in the working directory, named after the procurement reference and the language of the report.
+Save it in the working directory, named after the procurement reference and the language of the document.
 Before handing it over, check that it renders as laid out in Step 3 and that every character renders correctly in its language. If not, fix it and produce the document again.
