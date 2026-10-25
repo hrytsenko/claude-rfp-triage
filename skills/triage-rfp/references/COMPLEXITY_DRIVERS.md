@@ -5,36 +5,37 @@ Known sources of solution complexity to look for in RFP and tender documentation
 Each driver describes an aspect of the solution and explains what makes it troublesome.
 A driver is found only when the documentation requires its troublesome side.
 The same aspect in a simple form is not a driver: a standalone application on managed cloud services, or baseline security practices such as the OWASP Top 10, add no unusual complexity.
+How common a requirement is does not decide it: one found in most RFPs is still a driver when it demands the troublesome side.
 
 ## Drivers
 
-### 1. System Class
+### 1. Solution Type
 
-Identify whether the requested solution is an extensible platform or a product rather than a standalone application. Platforms and products introduce higher architectural complexity because they must support future extensions, maintain backward compatibility, and minimize the impact of changes on existing applications and consumers. These expectations increase solution complexity and associated risks.
+Identify whether the requested solution is a platform that others build on or extend, or a product intended for multiple customers, rather than a standalone application. Also identify requirements to serve several organizations from one deployment, such as multi-tenancy or per-organization configuration. Platforms and products may require extensibility, backward compatibility, and minimal impact of changes on existing consumers, while serving several organizations requires isolating their data and configuration. When future consumers, extensions, or customer-specific needs are not known at bid time, the architecture is harder to define and the effort harder to estimate. This increases architectural complexity, design effort, and the risks of costly rework.
 
-### 2. Target Environment
+### 2. Operational Infrastructure
 
-Identify on-premises, hybrid, or IaaS hosting, and constraints on infrastructure and permitted deployment technologies. Cloud-native solutions using managed PaaS or SaaS services reduce infrastructure complexity and operational effort, while on-premises, hybrid, or restrictive environments require additional architecture, deployment, and maintenance practices. These constraints increase implementation effort and delivery risks.
+Identify on-premises, hybrid, or IaaS hosting, and constraints on infrastructure and permitted deployment technologies. Also identify the operational infrastructure the solution needs beyond production hosting, such as non-production environments, deployment pipelines, the software supply chain, or monitoring. Managed cloud services reduce infrastructure and operational effort, while every part that must be built from scratch or under restrictive constraints adds to it, often far more than a first setup suggests. This increases implementation effort, operational effort, and delivery risks.
 
-### 3. Client Applications
+### 3. Service Levels
 
-Identify mobile client applications and the number of client platforms the solution must support, such as web, iOS, Android, or desktop. Multiple client platforms may require different technology stacks, API design considerations, distribution mechanisms, compatibility strategies, and platform-specific user experiences. This increases development complexity and maintenance risks.
+Identify explicit service-level commitments for production, such as measurable targets for availability, performance, scalability, or recovery, and obligations to operate and support the solution, such as 24/7 operations or incident resolution times. Meeting them may demand specific architectural patterns, infrastructure redundancy, resilience mechanisms, testing practices, continuous monitoring, and operational processes and staff. Strict targets, often beyond what the service actually needs, are especially hard to meet for a new system without operational history. These obligations increase solution complexity, operational effort, and the risks of failing to meet service commitments.
 
-### 4. Public APIs
+### 4. External Integrations
 
-Identify whether the solution must expose public interfaces or provide tools for external developers and consumers, such as API contracts, SDKs, CLIs, or MCP servers. Public interfaces require governance from the beginning, including security, versioning, documentation, backward compatibility, and lifecycle management. These obligations increase architectural complexity and long-term maintenance risks.
+Identify third-party services, enterprise systems, and legacy systems that the solution must integrate with, including the availability and maturity of their interfaces. Also identify interface standards the integrations must conform to, such as Peppol, ISO 20022, or HL7. Integrations introduce additional implementation, testing, mocking, and operational dependencies. Undocumented, legacy, or business-critical integrations may require specialized approaches, and interface standards add conformance testing and often certification. These dependencies increase complexity and delivery risks.
 
-### 5. External Integrations
+### 5. User Interfaces
 
-Identify third-party services, enterprise systems, and legacy systems that the solution must integrate with, including the availability and maturity of their interfaces. Integrations introduce additional implementation, testing, mocking, and operational dependencies, while undocumented, legacy, or business-critical integrations may require specialized approaches. These dependencies increase complexity and delivery risks.
+Identify mobile client applications and the number of client platforms the solution must support, such as web, iOS, Android, or desktop. Also identify explicit accessibility, usability, and localization requirements for its user interfaces, such as WCAG conformance or support for several languages and writing systems. Multiple client platforms may require different technology stacks, API design considerations, distribution mechanisms, compatibility strategies, and platform-specific user experiences. Accessibility, usability, and localization requirements add specialized design, testing, and often conformance audits on every platform. This increases development complexity, testing effort, and maintenance risks.
 
-### 6. Service Level (NFRs)
+### 6. Developer Interfaces
 
-Identify explicit service-level commitments and measurable targets for availability, performance, scalability, or reliability, such as 99.9% availability, response-time limits, throughput, or recovery objectives. Meeting these requirements may demand specific architectural patterns, infrastructure redundancy, resilience mechanisms, testing practices, and continuous monitoring. These obligations increase solution complexity and the risks of failing to meet service commitments.
+Identify whether the solution must expose public interfaces or provide tools for external developers and consumers, such as API contracts, SDKs, CLIs, or MCP servers. Also identify interface standards they must conform to, such as FHIR, Open Banking, or open data standards. Public interfaces require governance from the beginning, including security, versioning, documentation, backward compatibility, and lifecycle management, while interface standards add conformance testing and often certification. These obligations increase architectural complexity and long-term maintenance risks.
 
-### 7. Security Frameworks
+### 7. Security Controls
 
-Identify mandatory security frameworks, regulatory standards, and compliance requirements applicable to the solution, such as NIST, ISO 27001, or government and industry standards. Adherence to these frameworks may require specialized expertise, prescribed security controls, development methodologies, documentation, and verification practices. These obligations introduce additional architectural constraints, implementation effort, and compliance risks.
+Identify mandatory security and data protection frameworks, standards, and regulations applicable to the solution, such as NIST, ISO 27001, or government and industry standards. Also identify specific security controls the solution must implement or integrate with, such as access control, cryptography, audit trails, or security monitoring. Obligations that prescribe controls in detail, require integration with the customer's security infrastructure, or must be evidenced through audits or certification demand specialized expertise, prescribed development methodologies, documentation, and verification practices. This introduces additional architectural constraints, implementation effort, and compliance risks.
 
 ### 8. Data Migration
 
