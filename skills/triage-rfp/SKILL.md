@@ -40,7 +40,7 @@ For each driver in the drivers reference, search all documents for statements th
 Treat the documentation as the only source of truth:
 
 - A driver is **found** only if the documents state or directly imply it. Do not infer it from the industry, the customer, or common practice.
-- A driver is its troublesome side, as its definition describes. An aspect required only in a simple form is not found.
+- A driver is its troublesome side, as its definition describes. An aspect required only in a simple form is not a driver.
 - Assess each driver independently: a statement that matches several drivers counts for each of them.
 - Collect every relevant statement, not just the first one. Requirements for the same driver are often spread across several documents.
 - For each statement, note its location: document name and section, page, or requirement ID.
@@ -61,7 +61,7 @@ Then assess all drivers found together:
 
 ### Step 5 — Report
 
-Produce the report in the following format.
+Produce the report in the following format, in the language of the user's messages, or in English by default.
 
 - **Procurement** identifies what was triaged, so that the report can be read on its own: the customer, the title and reference of the procurement, and one sentence on what is being procured, as stated in the documents.
 - **Executive Summary** states the overall risk verdict, as defined in the drivers reference, followed by the scale of all verdicts with this one in bold, and a short paragraph in plain language.

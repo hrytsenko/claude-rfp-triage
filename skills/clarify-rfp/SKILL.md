@@ -41,7 +41,7 @@ The customer will not grant every lever, so a few strong levers serve the bid be
 
 ### Step 4 — Report
 
-Produce the levers in the following format, in the language of the triage report.
+Produce the report in the following format, in the language of the triage report.
 Quote short fragments of the documents verbatim, in their original language.
 If no lever is worth the customer's attention, state "No complexity levers worth the customer's attention." under the title.
 
