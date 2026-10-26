@@ -20,7 +20,12 @@ Explicit rules override the agent's judgment even when it would reason better, s
 Identifying drivers takes the agent's full attention, since it reads every document in full and checks every statement against every driver, and looking for levers in the same pass would divert attention from that.
 The separation also keeps the risk assessment neutral: the triage states what the documents require, while levers argue for the bid, and an agent looking for ways to reduce a risk tends to rate it lower.
 
+For the same reason, `clarify-rfp` works from the report alone and does not consult the drivers reference.
+The report already explains why each driver adds complexity, why it has its risk level, and how the drivers combine into the overall risk, and these explanations are what levers act on.
+Reassessing the drivers against their definitions in a pass that argues for the bid would bring back the bias the separation avoids.
+
 Do not add levers, mitigations, or clarification questions to the triage.
+Do not point `clarify-rfp` to the drivers reference or have it reassess the drivers, their risk levels, or the overall risk.
 
 ### No document tooling in the skills
 

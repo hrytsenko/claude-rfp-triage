@@ -16,6 +16,7 @@ Your only output should be the levers produced in the final step, or the specifi
 Use the latest version of the triage report in this conversation. If there is none, tell the user "Run /rfp-triage:triage-rfp first." and stop.
 If the report found no complexity drivers, tell the user "The triage found no complexity drivers to reduce." and stop.
 The report is your primary source: its findings, and its explanations of the risk levels and the overall risk, define the risk that levers act on.
+Take the drivers, their risk levels, and the overall risk as the report states them, without reassessing them.
 
 ### Step 2 — Consult the documents
 
@@ -32,7 +33,7 @@ For each lever, work out:
 2. **Findings:** the findings in the report that it relates to. A lever acts only on the risk the report identifies.
 3. **Question:** the clarification question to ask. It is sent to the customer as written.
 4. **Assumption:** the answer that favors the bid, stated as an assumption the bid can adopt as written.
-5. **Impact:** what the assumption would relieve in the report if it holds, such as removing a driver, lowering its risk level, or lowering the overall risk.
+5. **Impact:** what the assumption would relieve in the report if it holds, such as removing a driver, lowering its risk level, or lowering the overall risk, judged by the report's explanations.
 6. **Likelihood:** how likely the customer is to confirm the assumption, based on the documents.
 
 Impact is the primary signal: choose at most five levers, ordered by impact weighed against likelihood.
