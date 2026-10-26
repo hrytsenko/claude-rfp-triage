@@ -14,6 +14,14 @@ The `export-report` skill states the page layout, the color scale, and the limit
 Do not add rules, thresholds, checklists, or examples that steer the agent where a strong model can decide on its own.
 Explicit rules override the agent's judgment even when it would reason better, so add one only when it states an intent that cannot be inferred, such as a calibration choice or a scope boundary.
 
+### Triage and clarification are separate skills
+
+`triage-rfp` only identifies the complexity drivers and their risk; `clarify-rfp` finds the levers that could reduce it, working from the finished report.
+Identifying drivers takes the agent's full attention, since it reads every document in full and checks every statement against every driver, and looking for levers in the same pass would divert attention from that.
+The separation also keeps the risk assessment neutral: the triage states what the documents require, while levers argue for the bid, and an agent looking for ways to reduce a risk tends to rate it lower.
+
+Do not add levers, mitigations, or clarification questions to the triage.
+
 ### No document tooling in the skills
 
 The skills deliberately do not name tools for reading or producing PDF, DOCX, XLSX, PPTX, or other formats.
