@@ -46,18 +46,18 @@ Identify dependencies on existing data sources and requirements to migrate, cons
 Only the troublesome side of an aspect is a driver, so every driver found is a source of complexity and the lowest level is **High**. There are no Low or Medium levels.
 
 - **High** — The driver adds effort and uncertainty, but does not jeopardize delivery. State any aggravating factors in the findings: broad or open-ended scope, several instances at once (such as many integrations or many client platforms), strict measurable targets, or a need for specialized expertise.
-- **Critical** — The driver may jeopardize delivery or the bid itself: requirements that are mandatory and contractually enforced (such as penalties or certification before go-live), dependencies that are undocumented, unavailable, or outside the bidder's control, or requirements that conflict with each other or with other constraints in the documentation.
+- **Critical** — The driver may jeopardize delivery or the bid itself: requirements that are mandatory and contractually enforced (such as penalties or certification before go-live), dependencies that are undocumented, unavailable, or outside the bidder's control, or requirements that cannot all be met under the constraints in the documentation.
 
-When in doubt between High and Critical, state the uncertainty in the finding.
+When in doubt between High and Critical, choose Critical and state the uncertainty in the driver's summary.
 
 ## Overall Risk
 
 The overall risk is a verdict on how the drivers found combine, not the highest level among them: several drivers together may be harder than each one alone.
-The verdict is based on the documentation only, not on the bidder's capacity.
+The verdict is based on the documentation as it stands, not on the bidder's capacity or on what a clarification could change.
 
 - **Predictable** — No drivers, or only High drivers that are bounded and largely independent. A regular bid process can absorb them.
-- **Challenging** — Several High drivers that aggravate each other (such as on-premises hosting with strict availability targets and many legacy integrations), or a single Critical driver that a clarification question may resolve. The bid needs attention to them.
-- **Uncertain** — Critical drivers that clarification is unlikely to resolve, such as dependencies outside the bidder's control, or undocumented systems. Due diligence is needed before committing to bid.
-- **Unrealistic** — Critical drivers that conflict with each other or with other constraints in the documentation, or so many of them that delivery as specified looks infeasible.
+- **Challenging** — High drivers that are open-ended or aggravate each other (such as on-premises hosting with strict availability targets and many legacy integrations), or Critical drivers whose extent the documents define in full, such as penalties or certification before go-live. The bid needs attention to them.
+- **Uncertain** — Critical drivers whose extent the documents leave open, such as dependencies that are undocumented, unavailable, or outside the bidder's control, or gaps and contradictions in what is required. Due diligence is needed before committing to bid.
+- **Unrealistic** — Critical drivers with requirements that cannot all be met, or so many Critical drivers that delivery as specified looks infeasible.
 
 When in doubt between two verdicts, choose the more severe one and state the uncertainty in the Executive Summary.
