@@ -53,5 +53,7 @@ A DOCX is laid out by the application that opens it, and its readers may edit it
 ### Step 4 — Produce the document
 
 Produce the document with suitable tooling.
-Save it in the working directory, named after the procurement reference and the language of the document.
+Save it in the working directory as `<ref>-triage-<date>-<language>.<ext>`, for example `tender-triage-261103-en.pdf`.
+`<ref>` is the procurement reference, `<date>` is the export date as `YYMMDD`, and `<language>` is the ISO 639-1 code of the language of the document.
+If a file with that name existed before this export, do not overwrite it: add the next version, as in `tender-triage-261103-en-v2.pdf`.
 Before handing it over, check that it renders as laid out in Step 3 and that every character renders correctly in its language. If not, fix it and produce the document again.
