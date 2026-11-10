@@ -1,6 +1,7 @@
 ---
 name: clarify-rfp
 description: Find the complexity levers that could reduce the risk identified by triage-rfp, each with what to constrain, the clarification question to ask the customer, and the assumption that favors the bid. Use after triage-rfp when asked what to clarify with the customer or how to reduce the risk of an RFP or tender.
+license: MIT
 ---
 
 ## Instructions

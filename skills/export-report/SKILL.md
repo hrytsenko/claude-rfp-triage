@@ -2,6 +2,7 @@
 name: export-report
 description: Export the triage report produced by triage-rfp, with the levers produced by clarify-rfp if any, as a formal PDF or DOCX document, optionally translated into another language. Use after triage-rfp when asked to save, export, or share the triage report as a PDF or Word document.
 argument-hint: <language-or-format>...
+license: MIT
 ---
 
 ## Instructions

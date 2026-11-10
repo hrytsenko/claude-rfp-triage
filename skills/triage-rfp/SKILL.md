@@ -2,6 +2,7 @@
 name: triage-rfp
 description: Triage RFP or tender documentation for known sources of solution complexity and report the drivers found with their risk levels. Use when asked to triage, assess, or review an RFP, RFI, RFQ, tender, or bid documentation.
 argument-hint: <document-or-directory>...
+license: MIT
 ---
 
 ## Instructions
