@@ -2,25 +2,27 @@ name: Validate
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+  workflow_dispatch:
 
-permissions:
-  contents: read
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   validate:
+    name: Validate skill
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v5
-
-      - name: Install Claude Code
-        run: npm install -g @anthropic-ai/claude-code
-
-      - name: Validate manifests
-        run: claude plugin validate .
-
-      - name: Validate frontmatters
-        run: |
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: npx --yes --package=@anthropic-ai/claude-code@2.1.321 claude plugin validate .
+      - run: |
           for f in skills/*/SKILL.md; do
             yq --front-matter=extract -e '.name and .description' "$f"
           done
