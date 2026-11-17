@@ -19,7 +19,7 @@ Identify on-premises, hybrid, or IaaS hosting, and constraints on infrastructure
 
 ### 3. Service Levels
 
-Identify explicit service-level commitments for production, such as measurable targets for availability, performance, scalability, or recovery, and obligations to operate and support the solution, such as 24/7 operations or incident resolution times. Meeting them may demand specific architectural patterns, infrastructure redundancy, resilience mechanisms, testing practices, continuous monitoring, and operational processes and staff. Strict targets are especially hard to meet when the solution is new and has no operational history. This increases solution complexity, operational effort, and the risks of failing to meet service commitments.
+Identify explicit service-level commitments for production, such as measurable targets for availability, performance, scalability, or recovery. Also identify obligations to operate and support the solution, such as 24/7 operations or incident resolution times. Meeting them may demand specific architectural patterns, infrastructure redundancy, resilience mechanisms, testing practices, continuous monitoring, and operational processes and staff. Strict targets are especially hard to meet when the solution is new and has no operational history. This increases solution complexity, operational effort, and the risks of failing to meet service commitments.
 
 ### 4. External Integrations
 
@@ -46,7 +46,7 @@ Identify dependencies on existing data sources and requirements to migrate, cons
 Only the troublesome side of an aspect is a driver, so every driver found is a source of complexity and the lowest level is **High**. There are no Low or Medium levels.
 
 - **High** — The driver adds effort and uncertainty, but does not jeopardize delivery. State any aggravating factors in the findings: broad or open-ended scope, several instances at once (such as many integrations or many client platforms), strict measurable targets, or a need for specialized expertise.
-- **Critical** — The driver may jeopardize delivery or the bid itself: requirements that are mandatory and contractually enforced (such as penalties or certification before go-live), dependencies that are undocumented, unavailable, or outside the bidder's control, or requirements that cannot all be met under the constraints in the documentation.
+- **Critical** — The driver may jeopardize delivery or the bid itself: requirements that are mandatory and contractually enforced (such as penalties or certification before go-live); dependencies that are undocumented, unavailable, or outside the bidder's control; or requirements that cannot all be met under the constraints in the documentation.
 
 When in doubt between High and Critical, choose Critical and state the uncertainty in the driver's summary.
 
@@ -57,7 +57,7 @@ The verdict is based on the documentation as it stands, not on the bidder's capa
 
 - **Predictable** — No drivers, or only High drivers that are bounded and largely independent. A regular bid process can absorb them.
 - **Challenging** — High drivers that are open-ended or aggravate each other (such as on-premises hosting with strict availability targets and many legacy integrations), or Critical drivers whose extent the documents define in full, such as penalties or certification before go-live. The bid needs attention to them.
-- **Uncertain** — Critical drivers whose extent the documents leave open, such as dependencies that are undocumented, unavailable, or outside the bidder's control, or gaps and contradictions in what is required. Due diligence is needed before committing to bid.
+- **Uncertain** — Critical drivers whose extent the documents leave open, such as gaps and contradictions in what is required, or dependencies that are undocumented, unavailable, or outside the bidder's control. Due diligence is needed before committing to bid.
 - **Unrealistic** — Critical drivers with requirements that cannot all be met, or so many Critical drivers that delivery as specified looks infeasible.
 
 When in doubt between two verdicts, choose the more severe one and state the uncertainty in the Executive Summary.

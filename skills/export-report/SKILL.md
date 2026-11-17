@@ -35,7 +35,7 @@ Translation changes only the language, not the content:
 
 The document is formal and concise. Add no text of your own beyond page numbers and the export date.
 
-- **First page** holds the title, the Procurement and Executive Summary sections with the verdict scale, and, if the triage found drivers, a table of them with their risk levels, in the order of the report. It must fit on one page.
+- **First page** holds the title, the Procurement and Executive Summary sections with the verdict scale, and a table of the drivers found with their risk levels, in the order of the report. Omit the table if the triage found no drivers. All of it must fit on one page.
 - **Complexity Drivers**, if any, start on the second page. Set each driver's summary of why it has its level apart in a highlighted block, so that drivers are easy to recognize.
 - **Complexity Levers**, if `clarify-rfp` found any, start on a new page after the drivers. Set each lever's question and assumption apart in a highlighted block, so that what to ask and what to assume are easy to find.
 - **Sources** start on a new page at the end.
