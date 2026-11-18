@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  audit:
+  audit-skills:
     name: Audit skills
     uses: cisco-ai-defense/skill-scanner/.github/workflows/scan-skills.yml@f7824651ffeb9b89f7682ddd97d6fba8fe9c10b1 # 2.3.2
     permissions:

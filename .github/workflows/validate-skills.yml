@@ -12,8 +12,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  validate:
-    name: Validate skill
+  validate-skills:
+    name: Validate skills
     runs-on: ubuntu-latest
     permissions:
       contents: read

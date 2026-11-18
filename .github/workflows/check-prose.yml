@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  vale:
+  check-prose:
     name: Check prose
     runs-on: ubuntu-latest
     permissions:
