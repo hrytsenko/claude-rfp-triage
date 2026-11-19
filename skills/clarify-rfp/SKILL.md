@@ -14,7 +14,7 @@ Your only output should be the levers produced in the final step, or the specifi
 
 ### Step 1 — Find the report
 
-Use the latest version of the triage report in this conversation. If there is none, tell the user "Run /rfp-triage:triage-rfp first." and stop.
+Use the latest version of the triage report in this conversation. If there is none, tell the user "Run the triage-rfp skill first." and stop.
 If the report found no complexity drivers, tell the user "The triage found no complexity drivers to reduce." and stop.
 The report is your primary source: its findings, and its explanations of the risk levels and the overall risk, define the risk that levers act on.
 Take the drivers, their risk levels, and the overall risk as the report states them, without reassessing them.

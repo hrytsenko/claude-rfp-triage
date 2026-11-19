@@ -35,6 +35,12 @@ Run it after the triage, in the same conversation, to save the report as a docum
 If you found levers, they are included.
 Optionally, pass a format, PDF (default) or DOCX, and a language to translate the report.
 
+Alternatively, run all three with one prompt:
+
+```
+Triage the RFP documents in <directory>, then find the complexity levers, then export the report as PDF.
+```
+
 ## Before you run
 
 - **Model.** Use a high-tier model at high reasoning effort or above.

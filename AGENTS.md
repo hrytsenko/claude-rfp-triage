@@ -33,7 +33,13 @@ The skills deliberately do not name tools for reading or producing PDF, DOCX, XL
 This follows from relying on strong models: choosing and running suitable tooling is left to the agent that executes the skill, based on what is available in its environment.
 The skills only state the requirements: `triage-rfp` allows converting documents to text, keeping section headings, page numbers, table structure, and requirement IDs so that findings can be located; `export-report` states the layout and asks the agent to check the result.
 
-Do not add specific tools, commands, or installation steps to the skills or the README.
+Do not name document tools, their commands, or their installation steps in the skills or the README.
+
+### Skills work outside the plugin
+
+The skills can also be installed without the plugin, and their commands then have no plugin prefix.
+
+Refer to other skills by name, such as `triage-rfp`, not by plugin command, such as `/rfp-triage:triage-rfp`.
 
 ## Versioning
 

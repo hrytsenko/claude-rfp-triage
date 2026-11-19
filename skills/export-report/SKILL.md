@@ -13,7 +13,7 @@ Your only output should be the path to the document, or the specified error mess
 
 ### Step 1 — Find the report
 
-Use the latest version of the triage report in this conversation. If there is none, tell the user "Run /rfp-triage:triage-rfp first." and stop.
+Use the latest version of the triage report in this conversation. If there is none, tell the user "Run the triage-rfp skill first." and stop.
 If the conversation also has complexity levers produced by `clarify-rfp` for this report, export them as part of the report.
 Export nothing else from the conversation, such as follow-ups.
 The content of the report is final: do not add, remove, or reword anything, except as Step 2 and Step 3 allow.
